@@ -1,0 +1,247 @@
+@font-face {
+    font-family: man;
+    src: url(./fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: machina ;
+    src: url(./fonts/NeueMachina-Light.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: wheat;
+  
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: man;
+}
+main{
+    min-height: 100%;
+  width: 100%; background:radial-gradient(#31140c, black);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 26px 40px; */
+    /* background: red; */
+    padding: 22px 3.55vw;
+
+}
+nav .logo{
+    width: 10.2vmax;
+    
+}
+nav .profile{
+    height: 2.5vmax;
+    width: 2.5vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
+nav .part2{
+  padding: 0.8vw 1.9vw;
+  background: radial-gradient(#120D0D , #100b0b);
+display: flex;
+width: 36%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px  2px  rgb(255, 255, 255,0.501), 1px 1px 2px  #312828, 1px 1px 30px  #000000de;
+}
+.part2 h4{
+    font-size: 0.8vw;
+    text-transform: capitalize;
+    font-weight: 400;
+   opacity: 0.7;
+}
+.part2 h4:nth-child(1){
+    opacity:1 ;
+}
+.part3{
+    width: 8vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu{
+    /* background: red; */
+    height: 15px;
+    width: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px 0px;
+    
+}
+.line{
+    height:2.5px;
+    width: 100%;
+    background: wheat;
+    border-radius: 5px;
+    
+}
+
+
+.center-page1{
+    text-align: center;
+    padding: 6rem;
+}
+.center-page1 h3{
+font-family: machina;
+color: #e8602e;
+font-weight: 400;
+font-size: 1.1vw;
+text-transform: uppercase;
+margin-bottom: 1vw;
+}
+
+
+.center-page1 h2{
+    font-family: machina;
+    font-size: 3.6rem;
+color: white;
+font-weight: 400;
+
+padding: 0 13vw;
+text-transform: capitalize;
+margin-bottom: 1vw;
+line-height: 1.1;
+}
+
+.center-page1 h2 span.compony{
+    /* background: red; */
+    display: inline-block;
+    padding: 1px 5px;
+    font-family: machina;
+    border: 1px solid #e8602e;
+    background:  #e8602e21;
+    position: relative;
+}
+
+.center-page1 h2 span.ltdot{
+    display: inline-block;
+      height: 3.5px;
+    width: 3.5px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+}
+.center-page1 h2 span.rtdot{
+    display: inline-block;
+    height: 3.5px;
+    width: 3.5px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%,-50%);
+}
+.center-page1 h2 span.lbdot{
+    display: inline-block;
+     height: 3.5px;
+    width: 3.5px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%,50%);
+}
+.center-page1 h2 span.rbdot{
+    display: inline-block;
+    height: 3.5px;
+    width: 3.5px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%,50%);
+}
+
+.center-page1  p{
+    font-size: 1.5vmax;
+    padding: 0.7vw 15vmax;
+    color: rgba(255, 255, 255, 0.577);
+}
+
+.center-page1 h5{
+    color: rgba(255, 255, 255, 0.674);
+    /* font-family: machina; */
+    font-weight: 400;
+    margin-top: 1vw;
+    font-size: 0.9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+
+.center-page1 h5 span.million{
+        color: #e8602e;
+        font-weight: 600;
+        padding-inline: 8px;
+}
+.center-page1 h5 span.images img{
+    height: 2vmax;
+    width: 2vmax;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -14px;
+    
+} 
+
+.center-page1 button{
+    background: linear-gradient(to top right, #e8602e,#a3401d);
+    border: none;
+    padding: 0.8vmax 2.1vmax;
+    margin-top: 1.4vmax;
+    font-size: 1vmax;
+    border-radius: 7px;
+    font-family: 600;
+    box-shadow:  inset 0px 1px 1px rgba(255, 255, 255, 0.871),
+     0px 1px 1px rgba(255, 255, 255, 0.553);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive code navbar*/
+@media (max-width:600px) {
+    nav{
+        padding: 30px 8vw;
+    }
+    nav .logo{
+        width: 43vw;
+    }
+    .menu{
+        display: flex;
+    }
+    nav .part3{
+        display: none;
+    }
+     nav .part2{
+        display: none;
+    }
+}
